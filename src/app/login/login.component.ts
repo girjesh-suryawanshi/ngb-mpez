@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(private router:Router,private loginService:LogInServiceService) { }
 
   ngOnInit() {
-    this.getAllUsers();
+    // this.getAllUsers();
   }
 
   oclickLogIn(){
@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
     console.log(this.user);
 
     this.loginService.logInAuthentication(this.user).subscribe(success=>{
-      console.log(success);
+      console.log(success.status);
+      if(success.status==200){
+        this.router.navigate(['/dashboard']);
+      }
 
     },error=>{
       console.log(error);
