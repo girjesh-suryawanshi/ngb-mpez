@@ -1,3 +1,28 @@
-<p>
-  login works!
-</p>
+<!-- <button type="button" class="btn btn-primary" (click)="hello()">Primary</button>
+
+<label>UserId</label>
+<input  type="text"[(ngModel)]="user.userId" name="userId" >
+<label>User Password</label>
+<input type="password"[(ngModel)]="user.password" name="userPassword" >
+<p>{{message}}</p> -->
+<header id="header" >
+<div class="card bg-dark text-white">
+    <div class="card-body">
+        <h5 class="card-title text-center">Welcome to NGB MPEZ !</h5>
+        <form>
+        <div class="form-group">
+            <label for="userID">User Id</label>
+            <input type="text" class="form-control" [(ngModel)]="user.userId" name="userId" id="userId" placeholder="Enter User Id">
+
+        </div>
+        <div class="form-group">
+            <label for="User Password">User Password</label>
+            <input type="password" class="form-control" [(ngModel)]="user.userPassword" name="password" id="userPassword" placeholder="Enter Password">
+        </div>
+
+        <button type="submit" class="btn btn-primary" (click)="oclickLogIn()">Login</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" class="btn btn-success" (click)="oclickSignUp()">SignUp</button>
+        </form>
+    </div>
+</div>
+</header>

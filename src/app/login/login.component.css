@@ -1,0 +1,13 @@
+#header{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-image: url('src\assets\images\mpez.jpg');
+    height: 100%
+    
+   
+}
+
+.card{
+   margin-top: 120px;
+}
